@@ -1,0 +1,23 @@
+# Gitignore for Chrome Extension
+
+    # --- API Keys & Sensitive Data ---
+    # IMPORTANT: Your API key is currently directly in background.js.
+    # We will remove it from the code below, but if you were to use a .env
+    # file for *other* secrets in a more complex setup, you'd list it here.
+    # .env
+
+    # --- Node.js related files (if you use npm/yarn for dev later) ---
+    node_modules/
+    npm-debug.log
+    yarn-debug.log
+    .DS_Store # macOS specific
+    Thumbs.db # Windows specific
+
+    # --- Chrome Extension specific ignores ---
+    # Chrome creates some temporary files/folders
+    .DS_Store
+    .localized
+    *.crx
+    *.zip
+    .vscode/ # VS Code settings specific to your local setup (optional)
+    

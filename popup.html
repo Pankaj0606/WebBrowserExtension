@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension Popup</title>
+    <style>
+        /* Custom styles for the popup - direct inline CSS to comply with CSP */
+        body {
+            font-family: 'Inter', sans-serif; /* Using Inter font */
+            width: 300px; /* Fixed width for the popup */
+            height: 200px; /* Fixed height for the popup */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f4f8; /* Light background color */
+            padding: 16px;
+            box-sizing: border-box; /* Include padding in width/height */
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px; /* Rounded corners for the container */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: #2d3748; /* Darker text for heading */
+            font-size: 1.5rem; /* Equivalent to text-xl */
+            font-weight: 600; /* Equivalent to font-semibold */
+            margin-bottom: 1rem; /* Equivalent to mb-4 */
+        }
+        p {
+            color: #4a5568; /* Slightly lighter text for paragraph */
+            font-size: 0.9rem; /* Equivalent to text-gray-700 */
+        }
+        button {
+            margin-top: 1rem; /* Equivalent to mt-4 */
+            background-color: #3b82f6; /* Equivalent to bg-blue-500 */
+            color: #ffffff; /* Equivalent to text-white */
+            font-weight: 700; /* Equivalent to font-bold */
+            padding: 0.5rem 1rem; /* Equivalent to py-2 px-4 */
+            border-radius: 0.5rem; /* Equivalent to rounded-lg */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-md */
+            transition: background-color 0.3s ease-in-out; /* Equivalent to transition duration-300 ease-in-out */
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2563eb; /* Equivalent to hover:bg-blue-600 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello from your Extension!</h1>
+        <p>This is a simple popup for your browser extension.</p>
+        <button id="actionButton">
+            Click Me!
+        </button>
+    </div>
+
+    <!-- popup.js is not strictly necessary for this extension's core functionality.
+         If you want to add specific behavior to the button, you would create a popup.js
+         file and link it here (making sure it's bundled with the extension). -->
+    <!-- <script src="popup.js"></script> -->
+</body>
+</html>
